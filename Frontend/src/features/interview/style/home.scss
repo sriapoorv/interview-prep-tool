@@ -1,0 +1,239 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(180deg, #050816 0%, #111827 100%);
+}
+
+.interview-page {
+  width: min(1180px, 100%);
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 1.75rem;
+}
+
+.interview-panel {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.35);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.panel-label {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.panel-badge {
+  display: inline-flex;
+  margin-top: 0.5rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: rgba(96, 165, 250, 0.13);
+  color: #bfdbfe;
+}
+
+.required {
+  background: rgba(244, 63, 94, 0.12);
+  color: #fda4af;
+}
+
+.panel-textarea {
+  width: 100%;
+  min-height: 280px;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.25rem 1.2rem;
+  background: rgba(15, 23, 42, 0.9);
+  color: #e2e8f0;
+  resize: vertical;
+  font-size: 0.97rem;
+  line-height: 1.75;
+  outline: none;
+}
+
+.panel-textarea::placeholder {
+  color: rgba(226, 232, 240, 0.5);
+}
+
+.panel-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.help-text {
+  margin: 0;
+  color: rgba(226, 232, 240, 0.7);
+  font-size: 0.9rem;
+  max-width: 90%;
+}
+
+.char-count {
+  color: rgba(148, 163, 184, 1);
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.profile-header {
+  align-items: center;
+}
+
+.upload-card,
+.input-group,
+.info-card {
+  width: 100%;
+}
+
+.upload-card {
+  border: 1px dashed rgba(148, 163, 184, 0.25);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+}
+
+.upload-card-title {
+  color: #f8fafc;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.upload-card-subtitle {
+  color: rgba(226, 232, 240, 0.65);
+  font-size: 0.85rem;
+}
+
+.upload-dropzone {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 150px;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(148, 163, 184, 0.25);
+  color: #dbeafe;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.upload-dropzone:hover {
+  background: rgba(148, 163, 184, 0.08);
+  border-color: rgba(96, 165, 250, 0.5);
+}
+
+.upload-icon {
+  font-size: 1.8rem;
+}
+
+.divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgba(148, 163, 184, 0.9);
+  font-size: 0.85rem;
+  margin: 0.75rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(148, 163, 184, 0.15);
+}
+
+.divider::before {
+  margin-right: 1rem;
+}
+
+.divider::after {
+  margin-left: 1rem;
+}
+
+.input-label {
+  margin: 0 0 0.65rem;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  color: rgba(203, 213, 225, 0.9);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.button.primary-button {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: linear-gradient(90deg, #ec4899 0%, #f97316 100%);
+  box-shadow: 0 18px 40px rgba(249, 115, 22, 0.22);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button.primary-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 22px 50px rgba(249, 115, 22, 0.3);
+}
+
+@media (max-width: 960px) {
+  .interview-page {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .home {
+    padding: 1rem;
+  }
+
+  .panel-textarea {
+    min-height: 220px;
+  }
+}
